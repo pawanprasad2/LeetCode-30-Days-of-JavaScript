@@ -9,7 +9,7 @@
 // If, before the delay of t milliseconds, the function cancelFn is invoked, it should cancel the delayed execution of fn. Otherwise, if cancelFn is not invoked within the specified delay t, fn should be executed with the provided args as arguments.
 
 
-const cancellable = function(fn, args, ) {
+const cancellable = function(fn, args,t) {
     // cancelFn function//
     const cancelFn = function (){
       clearTimeout(timer);
