@@ -15,5 +15,5 @@ var debounce = function(fn, t) {
     return function(...args) {
         clearTimeout(timer);
         timer = setTimeout(fn, t, ...args);
-    // timer = setTimeout(()=>fn(...args), t);
+   
   
